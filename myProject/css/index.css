@@ -1,0 +1,171 @@
+html,body{
+    font-size: 100%;
+    font-family: 'Lato', sans-serif;
+    background: #ffffff;
+    margin: 0;
+}
+/*设置背景覆盖在所有元素上*/
+.container{
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom:0;
+    background-color: #333;
+}
+header{
+    height: 850px;
+    background:url(../img/header_4.jpg)  no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/*解决外边距溢出*/
+header:before{
+    content: "";
+    display: table;
+}
+div.header-top,div.nav>ul{
+    display: flex;
+    margin-left: 176px;
+    margin-top: 20px;
+}
+div.nav>ul>li{
+    list-style: none;
+    line-height: 30px;
+}
+div.nav>ul>li>a{
+    text-decoration: none;
+    color: #f9f9f9;
+    margin-right: 50px;
+    padding: 10px 5px;
+}
+div.genre,div.country{
+    width: 400px;
+    height:200px;
+    background: white;
+    padding: 20px;
+    position: absolute;
+    left: 700px;
+    display: none;
+}
+div.country {
+    width: 433px;
+    left: 1041px;
+}
+div.genre ul,div.country ul{
+    list-style: none;
+}
+div.genre ul li,div.country ul li{
+   padding-bottom:10px ;
+}
+div.genre ul li a,div.country ul a{
+    text-decoration: none;
+    color: black;
+}
+div.log h1>span{
+    font-size: 40px;
+    color: #02a388;
+}
+div.log a{
+    color: black;
+    text-decoration: none;
+}
+div.search>input{
+   width: 100%;
+    height: 60px;
+    border: 0;
+    outline: none;
+    background-color: black;
+    color: #f9f9f9;
+    font-size: 30px;
+    transition: all .5s linear;
+    opacity: 0;
+}
+.header-content{
+    padding-top: 176px;
+    text-align: center;
+}
+.header-content h3{
+    font-size: 48px;
+    color: white;
+    letter-spacing: 10px;
+}
+.header-content h3 span{
+color: #02a388;
+}
+.header-content h4{
+    font-size: 16px;
+    color: #fff;
+    margin: 32px 0 40px 0;
+    letter-spacing: 5px;
+}
+.header-content a{
+    padding: 11px 16px 11px 16px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 15px;
+    text-decoration: none;
+}
+/*登录注册按钮*/
+.login{
+    height: 80px;
+    background: #FE423F;
+    padding-left: 150px;
+    position: relative;
+}
+.login div{
+    position: absolute;
+    left: 60px;
+    top: 30px;
+}
+.login div a{
+    padding: 10px 20px;
+    background: #1B0B03;
+    color: white;
+    text-decoration: none;
+}
+.login div span+a{
+    margin-left: 50px;
+}
+/*登录注册page*/
+.login-page,.reg-pag{
+    width: 670px;
+    height: 322px;
+    position: absolute;
+    left:625px;
+    top: 160px;
+    background-color: #f9f9f9;
+    padding: 32px;
+    margin-top: -900px;
+    transition: all .5s linear;
+}
+.login-page button:first-child,.reg-pag button:first-child{
+    margin-left:645px;
+}
+.login-page h4,.reg-pag h4{
+    text-align: center;
+    font-size: 32px;
+    margin: 0;
+}
+.width{
+    text-align: center;
+    display: block;
+    width: 628px;
+    padding: 13px;
+    margin: 13px 0 20px 0;
+}
+
+.login-page form input:nth-child(3),.reg-pag form input:last-child{
+    border-radius:40px ;
+    background-color:#02a388;
+    margin-left: 15px;
+}
+.login-page a{
+    margin-left: 390px;
+}
+.reg-pag{
+    height: 440px;
+}
+
+
+
